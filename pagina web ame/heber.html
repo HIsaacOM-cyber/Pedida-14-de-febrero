@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de San Valentín</title>
+    <link rel="stylesheet" href="heber.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Mi amor, quiero preguntarte algo muy importante... <span class="corazon">❤️</span></h1>
+        <p class="introduccion">En este día tan especial, lleno de amor y magia, no podía dejar pasar la oportunidad de hacerte una pregunta muy importante...</p>
+        <p class="pregunta">¿Quieres ser mi San Valentín para siempre? 💌</p>
+        
+        <!-- Imagen romántica -->
+        <img src="https://via.placeholder.com/350x200?text=Te+amo+Mery" alt="Imagen romántica" class="imagen">
+
+        <!-- Mensaje especial -->
+        <p class="mensaje-especial">Te amo demasiado, Mery 💖</p>
+
+        <button class="btn" onclick="preguntar()">Haz click aquí para responder</button>
+        <p id="respuesta" class="mensaje"></p>
+        
+        <footer>
+            <p class="footer">Con todo mi amor, siempre 💖</p>
+        </footer>
+    </div>
+
+    <script>
+        function preguntar() {
+            let respuesta = prompt("Mi amor, ¿quieres ser mi San Valentín? 💌 (Responde con sí o no)");
+
+            if (respuesta.toLowerCase() === "si") {
+                document.getElementById("respuesta").innerHTML = "¡Yay! ¡Estoy muy feliz, te amo mucho! 😘";
+            } else if (respuesta.toLowerCase() === "no") {
+                document.getElementById("respuesta").innerHTML = "Está bien, siempre serás muy especial para mí 💖";
+            } else {
+                document.getElementById("respuesta").innerHTML = "No entendí tu respuesta, pero de todas formas te quiero mucho 💝";
+            }
+        }
+    </script>
+</body>
+</html>
